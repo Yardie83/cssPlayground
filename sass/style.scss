@@ -1,0 +1,37 @@
+@import "normalize/import-now";
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-150px, -50px);
+}
+
+.pulse {
+    width: 300px;
+    height: 100px;
+    background: #3d48eb;
+    // border-radius: 10%;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(19, 144, 216, 0.7), 0 0 0 0 rgba(19, 144, 216, 0.7);
+    }
+    40% {
+        box-shadow: 0 0 0 15px rgba(19, 144, 216, 0.4), 0 0 0 0 rgba(19, 144, 216, 0.4);
+    }
+    80% {
+        box-shadow: 0 0 0 15px rgba(19, 144, 216, 0), 0 0 0 10px rgba(19, 144, 216, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(19, 144, 216, 0), 0 0 0 10px rgba(19, 144, 216, 0);
+    }
+}
