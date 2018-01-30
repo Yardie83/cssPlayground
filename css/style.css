@@ -470,6 +470,15 @@ template {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   animation: animate 2s linear infinite;
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+  cursor: pointer;
 }
 
 @keyframes animate {

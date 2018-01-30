@@ -1,6 +1,6 @@
 @import "normalize/import-now";
 
-.center{
+.center {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -11,6 +11,7 @@
     width: 300px;
     height: 100px;
     background: #3d48eb;
+
     // border-radius: 10%;
     color: #ffffff;
     font-size: 20px;
@@ -19,18 +20,26 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
     animation: animate 2s linear infinite;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    cursor: pointer;
 }
 
 @keyframes animate {
     0% {
         box-shadow: 0 0 0 0 rgba(19, 144, 216, 0.7), 0 0 0 0 rgba(19, 144, 216, 0.7);
     }
+
     40% {
         box-shadow: 0 0 0 15px rgba(19, 144, 216, 0.4), 0 0 0 0 rgba(19, 144, 216, 0.4);
     }
+
     80% {
         box-shadow: 0 0 0 15px rgba(19, 144, 216, 0), 0 0 0 10px rgba(19, 144, 216, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(19, 144, 216, 0), 0 0 0 10px rgba(19, 144, 216, 0);
     }
