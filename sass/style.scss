@@ -66,4 +66,19 @@ $red: rgb(207, 23, 23);
     border-bottom: 400px solid transparent;
     background: url(/img/image.jpg);
     background-position: -400px -400px;
+    background-repeat: no-repeat;
+}
+
+.imagebox:hover{
+    animation: slideBackground 2s ease-in-out forwards;
+    -webkit-animation: slideBackground 2s ease-in-out forwards;
+}
+
+@keyframes slideBackground {
+    0% {
+        border-left: 200px solid black;
+    }
+    100% {
+        border-left: 0 solid black;
+    }
 }
